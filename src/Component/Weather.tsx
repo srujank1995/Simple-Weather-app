@@ -62,7 +62,7 @@ class WeatherAPIComponent extends React.Component<
     };
     const getWeather = await fetch(API_URL, requestOptions);
     const getResultWeather = await getWeather.json();
-    console.log("API Response:", getResultWeather);
+    // console.log("API Response:", getResultWeather);
 
     this.setState({
       Cname: getResultWeather.location.name,
